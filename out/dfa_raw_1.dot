@@ -1,0 +1,20 @@
+digraph DFA {
+  rankdir=LR;
+  D0 [shape=circle];
+  D1 [shape=circle];
+  D2 [shape=circle];
+  D3 [shape=circle];
+  D4 [shape=doublecircle];
+  start [shape=plaintext,label=""];
+  start -> D0;
+  D0 -> D1 [label="a"];
+  D0 -> D2 [label="b"];
+  D1 -> D1 [label="a"];
+  D1 -> D3 [label="b"];
+  D2 -> D1 [label="a"];
+  D2 -> D2 [label="b"];
+  D3 -> D1 [label="a"];
+  D3 -> D4 [label="b"];
+  D4 -> D1 [label="a"];
+  D4 -> D2 [label="b"];
+}

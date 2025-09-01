@@ -1,0 +1,4 @@
+Expresión: (a|b)*abb
+Preprocesada: (a|b)*.a.b.b
+Postfix: ab|*a.b.b.
+Simulación con w="babb" -> AFN: sí, AFD: sí, AFD_min: sí
